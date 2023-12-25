@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/src/favorite/widgets/chip_category.dart';
+import 'package:flutter_application_2/src/screens/favorite/delivery_tab_view.dart';
+import 'package:flutter_application_2/src/screens/favorite/widgets/card_favorite.dart';
+import 'package:flutter_application_2/src/screens/favorite/widgets/chip_category.dart';
+
 import 'package:flutter_application_2/src/theme.dart';
 
 class FavoriteView extends StatefulWidget {
@@ -52,12 +55,10 @@ class _FavoriteViewState extends State<FavoriteView>
       body: Padding(
         padding: const EdgeInsets.all(kDefaultPaddin),
         child: TabBarView(controller: _tabController, children: [
-          Text(
-            ('Card'),
+          Column(
+            children: [CardFavorite(), CardFavorite(), CardFavorite()],
           ),
-          Text(
-            ('Test'),
-          )
+          DeliveryTabView()
         ]),
       ),
     );

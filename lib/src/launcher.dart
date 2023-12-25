@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/src/activities/activities_view.dart';
-import 'package:flutter_application_2/src/favorite/favorite_view.dart';
-import 'package:flutter_application_2/src/home/home_view.dart';
+import 'package:flutter_application_2/src/screens/activities/activities_view.dart';
+import 'package:flutter_application_2/src/screens/favorite/favorite_view.dart';
+import 'package:flutter_application_2/src/screens/home/home_view.dart';
 import 'package:flutter_application_2/src/theme.dart';
 
 class Launcher extends StatefulWidget {

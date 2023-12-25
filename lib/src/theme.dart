@@ -11,6 +11,7 @@ const kPrimaryGradientColor = LinearGradient(
 );
 const kGrayColor = Color(0xFF979797);
 const kTextColor = Colors.black;
+const kTextMuted = Color(0xFF868e96);
 
 const kDefaultPaddin = 20.0;
 const kDedefaultRadius = 12.0;

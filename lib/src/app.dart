@@ -1,17 +1,15 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/src/favorite/favorite_view.dart';
-import 'package:flutter_application_2/src/home/home_view.dart';
 import 'package:flutter_application_2/src/launcher.dart';
+import 'package:flutter_application_2/src/screens/sample_feature/sample_item_details_view.dart';
+import 'package:flutter_application_2/src/screens/settings/settings_controller.dart';
+import 'package:flutter_application_2/src/screens/settings/settings_view.dart';
+import 'package:flutter_application_2/src/screens/shop/shop_view.dart';
 import 'package:flutter_application_2/src/theme.dart';
+
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-import 'sample_feature/sample_item_details_view.dart';
-import 'sample_feature/sample_item_list_view.dart';
-import 'settings/settings_controller.dart';
-import 'settings/settings_view.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
@@ -92,8 +90,10 @@ class MyApp extends StatelessWidget {
                     return SettingsView(controller: settingsController);
                   case SampleItemDetailsView.routeName:
                     return const SampleItemDetailsView();
+                  case ShopView.routeName:
+                    return const ShopView();
                   default:
-                    return const FavoriteView();
+                    return const Launcher();
                 }
               },
             );

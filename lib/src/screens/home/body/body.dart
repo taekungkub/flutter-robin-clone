@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/src/constant.dart';
-import 'package:flutter_application_2/src/home/widgets/card_carousel.dart';
-import 'package:flutter_application_2/src/home/widgets/card_category.dart';
+import 'package:flutter_application_2/src/screens/home/widgets/card_carousel.dart';
+import 'package:flutter_application_2/src/screens/home/widgets/card_category.dart';
+import 'package:flutter_application_2/src/screens/shop/shop_view.dart';
+
 import 'package:flutter_application_2/src/theme.dart';
 import 'package:flutter_application_2/src/widgets/page_header.dart';
 
@@ -28,6 +30,11 @@ class Body extends StatelessWidget {
                       child: CardCategory(
                     image: imageListOne[index]['image'].toString(),
                     title: imageListOne[index]['title'].toString(),
+                    callback: () {
+                      print('tab ${index}');
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ShopView()));
+                    },
                   ));
                 })),
             SizedBox(
