@@ -93,7 +93,7 @@ class MyApp extends StatelessWidget {
                   case ShopView.routeName:
                     return const ShopView();
                   default:
-                    return const Launcher();
+                    return ShopView();
                 }
               },
             );

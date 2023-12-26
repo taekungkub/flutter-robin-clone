@@ -29,3 +29,47 @@ final List<String> imgList = [
   'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
 ];
+
+const List<Map<String, String>> foodCategory = [
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ตามสั่ง'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'จานเดียว'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ไก่ทอด'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'กาแฟ'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ชานม'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ชาบู'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ชาบู'},
+  {'image': 'https://picsum.photos/id/237/200/300', 'title': 'ชาบู'},
+];
+
+const List<Map<String, String>> shopNearMeList = [
+  {
+    'image': 'https://picsum.photos/id/237/200/300',
+    'title': 'sdsds',
+    'distance': '4 KM',
+    'total_start': '5'
+  },
+  {
+    'image': 'https://picsum.photos/id/237/200/300',
+    'title': 'Lorem is sum',
+    'distance': '4 KM',
+    'total_start': '4'
+  },
+  {
+    'image': 'https://picsum.photos/id/237/200/300',
+    'title': 'Lorem is sum',
+    'distance': '4 KM',
+    'total_start': '4'
+  },
+  {
+    'image': 'https://picsum.photos/id/237/200/300',
+    'title': 'Lorem is sum',
+    'distance': '4 KM',
+    'total_start': '4'
+  },
+  {
+    'image': 'https://picsum.photos/id/237/200/300',
+    'title': 'Lorem is sum',
+    'distance': '4 KM',
+    'total_start': '4'
+  },
+];

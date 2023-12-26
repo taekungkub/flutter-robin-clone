@@ -52,14 +52,56 @@ class _FavoriteViewState extends State<FavoriteView>
           ),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(kDefaultPaddin),
-        child: TabBarView(controller: _tabController, children: [
-          Column(
-            children: [CardFavorite(), CardFavorite(), CardFavorite()],
-          ),
-          DeliveryTabView()
-        ]),
+      body: NestedScrollView(
+        headerSliverBuilder: (context, value) {
+          return [
+            SliverToBoxAdapter(
+              child: TabBar(
+                controller: _tabController,
+                labelColor: Colors.redAccent,
+                isScrollable: true,
+                tabs: [
+                  Tab(
+                    child: Text(
+                      "Tab 1",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ),
+                  Tab(
+                    child: Text(
+                      "Tab 1",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ];
+        },
+        body: Padding(
+          padding: const EdgeInsets.all(kDefaultPaddin),
+          child: TabBarView(controller: _tabController, children: [
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                  CardFavorite(),
+                ],
+              ),
+            ),
+            DeliveryTabView()
+          ]),
+        ),
       ),
     );
   }
